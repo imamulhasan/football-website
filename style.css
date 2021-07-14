@@ -99,7 +99,7 @@ header:hover img {
     font-size: 64px;
     font-family: 'Poppins', sans-serif;  
     color: gray;
-    margin-top: 165px;
+    margin-top: 170px;
 }
 .teams{
     display: flex;
@@ -206,4 +206,108 @@ span{
 }
 .foot-text p{
     font-size: 18px;
+}
+
+/*---------------------------- responsive website--------------------------------- */
+
+/* ------------------------------mobile device --------------------------------------- */
+
+@media only screen and (max-width:688px) {
+    /*----- header responsive ------- */
+
+    header{
+        background-color: #2D25A0;
+        width: 100%;
+        padding-top: 112px;
+        margin-bottom: 61px;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-text h1{
+        font-size: 55px;
+        font-weight: 700;
+    }
+    .banner-photo img{
+        width: 400px;
+        height: 320px;
+        margin-top: 50px;
+    }
+
+    /*-------------- players part resonsive ----------- */
+    .players-1{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        margin-left: 70px;
+    }
+    
+    .players-2{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        margin-left: 70px;
+    }
+    
+    .players-3{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr);
+        margin-left: 70px;
+        
+    }
+    .player{
+        margin-bottom: 24px;
+
+    }
+    .player-3 , .player-6 {
+        margin-bottom: 0;
+    }
+    /* -------------- team part responsive --------------*/
+
+    .top-team h1{
+        font-size: 40px;
+        margin-top: 60px;
+        
+    }
+    .teams-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-left: 45px;
+    }
+    .team-2{
+        margin-bottom: 40px;
+    }
+
+    /* ------------copa america responsive ----------------- */
+
+    .copa-america{
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        margin-top: 158px;
+        margin-bottom:158px;
+    }
+    .follow-text{
+        margin-left: 20px;
+    }
+    .follow-text h3{
+        font-size: 25px;
+        color: white;
+    }
+    .follow-text a{
+        padding: 5px 20px;
+        font-size: 10px;
+    }
+    .follow-icon img{
+        width:50px;
+        height: 30px;
+    }
+
+    /*----------------footer part responsive----------------------- */
+
+    .foot-pic img{
+        width: 275px;
+        height: 63px;
+    }
 }
